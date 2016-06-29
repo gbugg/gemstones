@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^opal/', include('opal.urls')),
+    url(r'^opal/', include('opal.urls',namespace="opal")),
+    url(r'^jade/', include('jade.urls',namespace="jade")),
     url(r'^admin/', include(admin.site.urls)),
 ]
