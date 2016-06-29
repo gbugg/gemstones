@@ -9,8 +9,11 @@ body {
     color: #4ABDAC;
 }
 h1 {
-   font-size: 150%;
+   font-size: 50%;
 }
 ul {
-   font-size: 150%;
+   font-size: 250%;
 }
+.bigfont li {
+   fonst_size: 10em;
+)
