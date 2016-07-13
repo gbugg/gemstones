@@ -1,0 +1,23 @@
+body {
+    background-color:  #4ABDAC;
+}
+.mainbody {
+    background-color: #F78733;
+	width: 60%;
+}
+a:hover {
+	color: #FC4A1A;
+}
+body,div,div,div,h1{
+        text-align: "center";
+}
+ul {
+   font-size: 120%;
+}
+hl {
+   font-size: 120%;
+}
+input[type="input"] {
+        align: "center"; 
+
+}

@@ -1,0 +1,19 @@
+li a {
+    color: green;
+}
+body {
+    background-color:  #FC4A1A;
+    color: #F78733;
+}
+.greed {
+    color: #4ABDAC;
+}
+h1 {
+   font-size: 50%;
+}
+ul {
+   font-size: 250%;
+}
+.bigfont li a {
+   font_size: 15em;
+)

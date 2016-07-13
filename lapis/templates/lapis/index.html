@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {% load staticfiles %}
+ <title>QuestionTime</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../../static/lapis/bootstrap/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="../../static/lapis/style.css" />
+ <script src="../../static/lapis/jquery-1.12.4.js"></script>
+ <script src="../../static/lapis/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row" id="header">
+       <div class="col-md-2"><img src="../../static/lapis/imagesub.png" class="img-rounded" alt="unicorn" width="304" height="236"></div>
+       <div class="col-md-8 text-center"><h1>Magic Trivia Survey</h1></div>
+       <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+
+<h2>Today's Questions</h2>
+
+<div class="mainbody">
+{% if latest_question_list %}
+    <ul class="bigfont">
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'lapis:detail' question.id %}">{{ question.question_text}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</div>
+
+    </div>
+   </div>
+</body>
+</html>	
