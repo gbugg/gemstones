@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- {% load staticfiles %}
- <title>Question</title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="../../static/lapis/bootstrap/css/bootstrap.css">
- <link rel="stylesheet" type="text/css" href="../../static/lapis/style.css" />
- <script src="../../static/lapis/jquery-1.12.4.js"></script>
- <script src="../../static/lapis/bootstrap/js/bootstrap.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="row" id="header">
-
-    </div>
-    <div class="row">
+{% extends "lapis/base.html" %}
+{% load staticfiles %}
+{% block title %}Question{% endblock %}
+{% block content %}
 
 <h1>{{ question.question_text }}</h1>
 
@@ -33,9 +19,6 @@
 <input type="submit" value="Vote" />
 </form>
 </div>
-
-    </div>
-   </div>
-</body>
-</html>
+{% endblock %}
+{% block js %}{% endblock %}
 
