@@ -1,23 +1,36 @@
 body {
-    background-color:  #4ABDAC;
+    background-color:  #577492;
 }
 .mainbody {
-    background-color: #F78733;
+    background-color: #D4D8D1;
 	width: 60%;
 }
 a:hover {
-	color: #FC4A1A;
+	color: #B74934;
 }
 body,div,div,div,h1{
         text-align: "center";
 }
 ul {
-   font-size: 120%;
+   font-size: 160%;
+}
+ul.bigfont > li > a{
+   color: #332c2F;
 }
 hl {
    font-size: 120%;
 }
+div.content > h1 {
+   color: #D4D8D1;
+}
+h2 {
+   color: #D4D8D1;
+}
 input[type="input"] {
         align: "center"; 
+}
+input[type="label"]{
+   color: #332c2F;
+   font-size: 160%;
 
 }
