@@ -9,8 +9,8 @@
     <title>{% block title %}{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../static/lapis/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/lapis/style.css">
+    <link rel="stylesheet" href="{% static 'lapis/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'lapis/style.css' %}">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
    <div class = "jumbotron">
      <div class = "container">
       <div class = "row">
-       <div class = "col-md-2"><img src="../../static/lapis/itsm12.png" class="img-responsive" alt="ITSM logo" ></div>
+       <div class = "col-md-2"><img src="{% static 'lapis/itsm12.png' %}" class="img-responsive" alt="ITSM logo" ></div>
        <div class = "col-md-8"><h1>MAGIC TRIVIA SURVEY</h1></div>
        <div class = "col-md-2"></div>
       </div>
@@ -50,9 +50,9 @@
    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../../static/lapis/jquery-1.12.4.js"></script>
+    <script src="{% static 'lapis/jquery-1.12.4.js' %}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../static/lapis/bootstrap/js/bootstrap.js"></script>    
+    <script src="{% static 'lapis/bootstrap/js/bootstrap.js' %}"></script>    
     {% block js %}{% endblock %}
   </body>
 </html>
