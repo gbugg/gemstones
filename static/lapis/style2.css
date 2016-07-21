@@ -1,0 +1,18 @@
+body {
+    background-color:  #FFFFFF;
+}
+.jumbotron {
+    background-color: #FFFFFF
+}
+.mainbody {
+    background-color: #FFFFFF;
+}
+div.content > h1 {
+   color: #FFFFFF;
+}
+h2 {
+   color: #FFFFFF;
+}
+input[type="label"]{
+   color: #FFFFFF;
+}
